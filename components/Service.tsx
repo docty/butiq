@@ -1,31 +1,31 @@
-import { Card, Grid, Flexbox, Icon, Cage, Heading, Paragraph } from "@decimalvalues/react-ui";
-
+import { IoMdCar, IoMdCash, IoMdHelpBuoy } from "react-icons/io";
 const Service = () => (
-    <Card className="mx-4 sm:mx-4 lg:mx-32 mt-12">
-        <Grid lg={'3'} md={'2'} sm={'2'} gap={'6'} className={'py-8 px-5'}>
-            <Flexbox>
-                <Icon name="icon-truck" className={'mr-4'} style={{fontSize: '3rem'}} />
-                <Cage className="">
-                    <Heading type={'H4'} text={'Free Delivering & Return'} className="font-bold"/>
-                    <Paragraph text={'Free delivering on orders'} />
-                </Cage>
-            </Flexbox>
-            <Flexbox>
-                <Icon name="icon-lifebuoy" className={'mr-4'} style={{fontSize: '3rem'}} />
-                <Cage className="">
-                    <Heading type={'H4'} text={'Customer Support 24/7'} className="font-bold"/>
-                    <Paragraph text={'Instant access to perfect support'} />
-                </Cage>
-            </Flexbox>
-            <Flexbox>
-                <Icon name="icon-cash2" className={'mr-4'} style={{fontSize: '3rem'}} />
-                <Cage className="">
-                    <Heading type={'H4'} text={'100% Secure Payment'} className="font-bold"/>
-                    <Paragraph text={'We ensure secure payment'} />
-                </Cage>
-            </Flexbox>
-        </Grid>
-    </Card>
+    <div className="mx-4 sm:mx-4 lg:mx-32 mt-12">
+        <div className={'py-8 px-5 grid gap-6 grid-cols-1 lg:grid-cols-3 md:grid-cols-2 border shadow-sm rounded-md'}>
+            <div className="flex">
+                <IoMdCar className={'mr-4'} style={{ fontSize: '3rem' }} />
+                <div className="">
+                    <h4 className="font-bold">Free Delivering & Return </h4>
+                    <p>Free delivering on orders</p>
+                </div>
+            </div>
+            <div className="flex">
+                <IoMdHelpBuoy className={'mr-4'} style={{ fontSize: '3rem' }} />
+                <div className="">
+                    <h4 className="font-bold">Customer Support 24/7 </h4>
+                    <p>Instant access to perfect support</p>
+                </div>
+            </div>
+            <div className="flex">
+                <IoMdCash className={'mr-4'} style={{ fontSize: '3rem' }} />
+                <div className="">
+                    <h4 className="font-bold">100% Secure Payment </h4>
+                    <p>We ensure secure payment</p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
 );
 
 
